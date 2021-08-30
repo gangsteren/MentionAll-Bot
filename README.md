@@ -7,7 +7,7 @@ _**Bu bot, gruplarda 10.000'e kadar üyeden bahsedebilir ve kanallarda 200'e kad
 - yakında yeni notlarım gelecektir. 
 
 ### 🚀 Deploy to heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=mami burayı doldur.. Https en başa)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba55/MentionTaggerTg)
 
 ### 🎯 Krediler ve Diğer
 - [Byboss](https://t.me/byboss) bu Proje için ;)
