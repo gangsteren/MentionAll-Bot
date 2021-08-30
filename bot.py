@@ -17,7 +17,7 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 anlik_calisan = []
 
-@client.on(events.NewMessage(pattern='^(?i)/cancel'))
+@client.on(events.NewMessage(pattern='^(?i)/pass'))
 async def cancel(event):
   global anlik_calisan
   anlik_calisan.remove(event.chat_id)
@@ -25,11 +25,11 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**LoungeTagger Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
+  await event.reply("**Byboss Sahibim**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/loungetaggerbot?startgroup=a'),
-                      Button.url('📣 Support', 'https://t.me/loungesupport'),
-                      Button.url('🚀 Sahibim', 'https://t.me/bodrumlubebekk')]
+                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/Botismiyazmami?startgroup=a'),
+                      Button.url('📣 Support', 'https://t.me/djbyboss'),
+                      Button.url('🚀 Sahibim', 'https://t.me/byboss')]
                     ),
                     link_preview=False
                    )
@@ -38,9 +38,9 @@ async def help(event):
   helptext = "**Loungetagger bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/loungetaggerbot?startgroup=a'),
-                       Button.url('📣 Support', 'https://t.me/loungesupport'),
-                      Button.url('🚀 Sahibim', 'https://t.me/bodrumlubebekk')]
+                      [Button.url('🌟 Beni Bir Gruba Ekle', 'https://t.me/botiamiyaz?startgroup=a'),
+                       Button.url('📣 Support', 'https://t.me/djbyboss'),
+                      Button.url('🚀 Sahibim', 'https://t.me/byboss')]
                     ),
                     link_preview=False
                    )
@@ -106,5 +106,5 @@ async def mentionall(event):
         usrtxt = ""
 
 
-print(">> Bot çalıyor merak etme 🚀 @loungesupport bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @Byboss bilgi alabilirsin <<")
 client.run_until_disconnected()
